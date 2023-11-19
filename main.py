@@ -4,6 +4,7 @@ from urllib.parse import urlparse
 import argparse 
 from dotenv import load_dotenv
 
+
 def is_bitlink(auth, bitlink):
     check_url = f'https://api-ssl.bitly.com/v4/bitlinks/{bitlink}'
     response = requests.get(check_url, headers=auth)
